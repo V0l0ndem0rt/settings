@@ -90,6 +90,10 @@ plugins=(
     zsh-syntax-highlighting
 )
 export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"
+# делает следующее:
+# Добавляет директории $HOME/bin, $HOME/.local/bin и /usr/local/bin в начало переменной окружения PATH.
+# -x означает экспортировать переменную, чтобы она была доступна всем дочерним процессам (например, программам, которые вы запускаете из shell).
+# $PATH в конце добавляет к новым путям уже существующие значения переменной PATH (чтобы не потерять системные пути).
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
